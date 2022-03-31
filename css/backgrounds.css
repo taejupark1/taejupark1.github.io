@@ -1,0 +1,14 @@
+html body {
+    background-image: linear-gradient(135deg,rgb(85, 168, 82), rgb(22, 128, 210));
+    height: 100vh;
+}
+
+.content {
+    transform: translateY(160%);
+    width: 100%;
+}
+
+.api1main {
+    width: 100%;
+    font-size: 15px;
+}
