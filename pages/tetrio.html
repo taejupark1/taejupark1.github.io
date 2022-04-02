@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>API 2</title>
+  <title>Tetrio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- bootstrap -->
@@ -25,7 +25,7 @@
                 <a class="nav-link" href="/pages/animals.html">Animals</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/pages/api2.html">API 2</a>
+                <a class="nav-link active" aria-current="page" href="/pages/tetrio.html">Tetrio</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -39,7 +39,16 @@
       </nav>
   
     <div class="container">
-        
+      <div class="api1main text-center text-light mt-3">
+        <h1 class="text-body">Input user name to check the game record.</h1>
+        <h2 class="mb-3"><a href="https://tetr.io/">[go to play Tetris]</a></h2>
+        <div class="input-group mb-3">
+          <!-- User ID validation between 3 to 16 characters -->
+          <span class="input-group-text" id="basic-addon3">https://ch.tetr.io/u/</span>
+          <input type="text" class="form-control" placeholder="Username" id="urlInput" aria-describedby="basic-addon3">
+          <button class="btn btn-primary" onclick="getOption()"> Search </button>
+        </div>
+      </div>
     </div>
 
 </body>
