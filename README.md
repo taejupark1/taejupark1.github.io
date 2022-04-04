@@ -21,3 +21,15 @@
     - Input validation used with regex.
     - If user is exist then fetch the API then display the infomation.
     - If user has profile picture, it will be displayed bottom of table.
+    - Found out the api fetch blocked by CORS on Chrome brower.
+
+## Test RUN on Localhost of Tetrio page
+
+### UserFound
+![alt text](/img/foundUser.png)
+
+### UserNotFound
+![alt text](/img/notFoundUser.png)
+
+### ValidationError
+![alt text](/img/validationError.png)
