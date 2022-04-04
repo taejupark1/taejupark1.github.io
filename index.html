@@ -31,7 +31,7 @@
                 <a class="nav-link" href="/pages/animals.html">Animals</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/pages/tetrio.html">Tetrio</a>
+                <a class="nav-link" href="/pages/tables.html">Tables</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -52,7 +52,7 @@
             <h2 class="text-warning mb-2" style="font-family: 'Orbitron', sans-serif;">Tetrio: Search user to display its record </h2>
             <div class="input-group">
               <span class="input-group-text" id="basic-addon3">Page to -></span>
-              <input type="text" class="form-control" placeholder="(Animals or Tetrio)" id="goInput" maxlength="16" aria-describedby="basic-addon3">
+              <input type="text" class="form-control" placeholder="(Animals or Tables)" id="goInput" maxlength="16" aria-describedby="basic-addon3">
               <button class="btn btn-primary" id="searchBtn" onclick="go()"> Go </button>
             </div>
             <!-- git icon -->
@@ -73,10 +73,10 @@
         let page = document.getElementById("goInput").value.toLowerCase();
         if (page == "animals") {
           location.href = "/pages/animals.html";
-        } else if (page == "tetrio") {
-          location.href = "/pages/tetrio.html";
+        } else if (page == "tables") {
+          location.href = "/pages/tables.html";
         } else {
-          alert('type animals or tetrio');
+          alert('type animals or tables');
         }
       }
     </script>

@@ -10,7 +10,7 @@
   <!-- css -->
   <link rel="stylesheet" href="/css/backgrounds.css">
   <!-- script -->
-  <script src="/scritps/tetrioAPI.js"></script>
+  <script src="/scritps/form.js"></script>
 </head>
 <body onload='document'>
 
@@ -27,7 +27,7 @@
                 <a class="nav-link" href="/pages/animals.html">Animals</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/pages/tetrio.html">Tetrio</a>
+                <a class="nav-link active" aria-current="page" href="/pages/tables.html">Tables</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -44,24 +44,29 @@
     <div class="container">
       <div class="api1main text-center text-light mt-3">
         <!-- header -->
-        <h1 class="text-info">Input user name to check the game record.</h1>
-        <h1 class="text-danger">** currently, it does not work on github page due to error, `has been blocked by CORS policy: No 'Access-Control-Allow-Origin'`.
-          Testing went successfully in localhost and currently looking for the solve the problem.
-        Update1: It works if use chrome extention to Access-Control-Allow-Origin, i.e. ALLOW CORS</h1>
-        <h3 class="text-warning">Test usernames: seoul, firestorm, asd, zxczzvxz(user not found), zz(validation check)</h3>
-        <!-- tetrio link -->
-        <h2 class="mb-3"><a href="https://tetr.io/">[go to play Tetris]</a></h2>
+        <h1 class="text-warning">Input firstname, lastname, email</h1>
+      
         <!-- search bar -->
         <div class="input-group mb-3">
           <!-- User ID validation between 3 to 16 characters -->
-          <span class="input-group-text" id="basic-addon3">https://ch.tetr.io/u/</span>
-          <input type="text" class="form-control" placeholder="Username" id="urlInput" maxlength="16" aria-describedby="basic-addon3">
-          <button class="btn btn-primary" id="searchBtn" onclick="validation()"> Search </button>
+          <span class="input-group-text" id="basic-addon3">First Name =></span>
+          <input type="text" class="form-control" placeholder="firstname" id="firstname" maxlength="30" aria-describedby="basic-addon3">
         </div>
-        <h2 class="text-danger" id="printResult"></h2>
+        <div class="input-group mb-3">
+          <!-- User ID validation between 3 to 16 characters -->
+          <span class="input-group-text" id="basic-addon3">Last Name => </span>
+          <input type="text" class="form-control" placeholder="lastname" id="lastname" maxlength="30" aria-describedby="basic-addon3">
+        </div>
+        <div class="input-group mb-3">
+          <!-- User ID validation between 3 to 16 characters -->
+          <span class="input-group-text" id="basic-addon3">Email Address => </span>
+          <input type="text" class="form-control" placeholder="email" id="email" maxlength="30" aria-describedby="basic-addon3">
+        </div>
+        <button class="btn btn-primary" id="searchBtn" onclick="validation()"> Submit </button>
         <!-- result table -->
-        <p id="tableResult"></p>
-        <div id="profileResult"></p>
+        <h2 class="text-danger" id="resultTable">
+
+        </h2>
       </div>
     </div>
 </body>

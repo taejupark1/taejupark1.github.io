@@ -15,21 +15,20 @@
     - User has an option to select either Cats or Dogs.
     - Depends on user's pick, the animal picture will be displayed.
     - The pictures will be generated randomly through the API calls.
-## Tetrio page
-    - User can search the online tetris game players' records.
-    - Play tetr.io link provided.
-    - Input validation used with regex.
-    - If user is exist then fetch the API then display the infomation.
-    - If user has profile picture, it will be displayed bottom of table.
-    - Found out the api fetch blocked by CORS on Chrome brower.
+## Tables page
+    - User input into 3 different forms append into tables.
+    - Each input checks through regex that checks validation.
 
-## Test RUN on Localhost of Tetrio page
+<!-- ## Test RUN on Localhost of Tetrio page -->
 
-### UserFound
-![alt text](/img/foundUser.png)
+### Input Validation
+![alt text](/img/InputVaild.png)
 
-### UserNotFound
-![alt text](/img/notFoundUser.png)
+### Firstname not valid
+![alt text](/img/FirstNameNotVaild.png)
 
-### ValidationError
-![alt text](/img/validationError.png)
+### Lastname not valid
+![alt text](/img/LastNameNotVaild.png)
+
+### Email not valid
+![alt text](/img/emailNotValid.png)
