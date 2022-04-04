@@ -9,8 +9,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- css -->
   <link rel="stylesheet" href="/css/backgrounds.css">
+  <!-- script -->
+  <script src="/scritps/tetrioAPI.js"></script>
 </head>
-<body>
+<body onload='document'>
 
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
         <div class="container-fluid">
@@ -38,18 +40,26 @@
         </div>
       </nav>
   
+    <!-- main container -->
     <div class="container">
       <div class="api1main text-center text-light mt-3">
-        <h1 class="text-body">Input user name to check the game record.</h1>
+        <!-- header -->
+        <h1 class="text-danger">Input user name to check the game record.</h1>
+        <h3 class="text-warning">Test usernames: seoul, firestorm, asd, zxczzvxz(user not found), zz(validation check)</h3>
+        <!-- tetrio link -->
         <h2 class="mb-3"><a href="https://tetr.io/">[go to play Tetris]</a></h2>
+        <!-- search bar -->
         <div class="input-group mb-3">
           <!-- User ID validation between 3 to 16 characters -->
           <span class="input-group-text" id="basic-addon3">https://ch.tetr.io/u/</span>
-          <input type="text" class="form-control" placeholder="Username" id="urlInput" aria-describedby="basic-addon3">
-          <button class="btn btn-primary" onclick="getOption()"> Search </button>
+          <input type="text" class="form-control" placeholder="Username" id="urlInput" maxlength="16" aria-describedby="basic-addon3">
+          <button class="btn btn-primary" id="searchBtn" onclick="validation()"> Search </button>
         </div>
+        <h2 class="text-danger" id="printResult"></h2>
+        <!-- result table -->
+        <p id="tableResult"></p>
+        <div id="profileResult"></p>
       </div>
     </div>
-
 </body>
 </html>
