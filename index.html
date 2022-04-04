@@ -17,6 +17,7 @@
 </head>
 <body>
 
+    <!-- nav bar -->
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
         <div class="container-fluid">
           <ul class="navbar-nav">
@@ -43,11 +44,18 @@
         </div>
       </nav>
   
+    <!-- main container -->
     <div class="container">
         <div class="content text-center text-light">
             <h1 class="text-danger" style="font-family: 'Indie Flower', cursive;" >Welcome To API Practice Website</h1>
-            <h2 class="text-warning" style="font-family: 'Orbitron', sans-serif;">Animal: Selected animal pictures will be generated randomly from API</h2>
-            <h2 class="text-warning mb-3" style="font-family: 'Orbitron', sans-serif;">Tetr.io: Search user to display its record </h2>
+            <h2 class="text-warning" style="font-family: 'Orbitron', sans-serif;">Animals: Selected animal pictures will be generated randomly from API</h2>
+            <h2 class="text-warning mb-2" style="font-family: 'Orbitron', sans-serif;">Tetrio: Search user to display its record </h2>
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon3">Page to -></span>
+              <input type="text" class="form-control" placeholder="(Animals or Tetrio)" id="goInput" maxlength="16" aria-describedby="basic-addon3">
+              <button class="btn btn-primary" id="searchBtn" onclick="go()"> Go </button>
+            </div>
+            <!-- git icon -->
             <a href="https://github.com/philippark89" id="giticon">
                 <button type="button" class="btn btn-success">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -55,9 +63,23 @@
                     </svg>
                     GitHub
                 </button>
-                </a>
+              </a>
         </div>
     </div>
+    
+    <!-- script input to go to other pages -->
+    <script>
+      function go() {
+        let page = document.getElementById("goInput").value.toLowerCase();
+        if (page == "animals") {
+          location.href = "/pages/animals.html";
+        } else if (page == "tetrio") {
+          location.href = "/pages/tetrio.html";
+        } else {
+          alert('type animals or tetrio');
+        }
+      }
+    </script>
 
 </body>
 </html>
