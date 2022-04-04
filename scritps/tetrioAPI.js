@@ -7,6 +7,8 @@ function validation() {
         search()
     } else {
         document.getElementById("printResult").innerHTML = "User name should be between 3 to 16 characters.";
+        document.getElementById("tableResult").innerHTML = "";
+        document.getElementById("profileResult").innerHTML = "";
     }
 }
 
